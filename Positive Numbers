@@ -1,0 +1,28 @@
+# Result for list 1
+def a():
+    list_1 = [12,-7,5,64,-14]
+    outp = []
+    for i in list_1:
+        if i > 0:
+            outp.append(i)
+    print("Output ",outp)    
+    
+
+# Result for list 2
+def b():
+    list_2 = [12,14,-95,3]
+    outp1 = []
+    for i in list_2:
+        if i > 0:
+            outp1.append(i)
+    print("Output ",outp1)
+
+
+# input from the user
+x = int(input("Enter 1 or 2 "))
+if x == 1:
+    a()
+else:
+    b()
+    
+        
