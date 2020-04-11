@@ -1,0 +1,29 @@
+import random
+
+#Function
+def name(no):
+    print("The length of the string is ", no)
+    strr = []
+    new = ""
+    alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    #print(len(alpha))
+    for i in range(0,no):
+        r1 = random.randint(0,len(alpha))                        #Random Integer Generation
+        strr.append(alpha[r1])                                   #Appending the index value to the list
+        
+        if not i < no:                                           #If there are no vowels add some vowels
+            if r1 is not 0 or 5 or 9 or 15 or 21:
+                strr.append(alpha[0])
+        else:
+            continue
+        
+    for t in strr:                                               #Conversion of list to string 
+        new+=t
+    print("The String is  ", new)                                #Print the final string
+
+ 
+num = int(input("Enter the length of the name "))                #String Sixe taken from the user 
+name(num)                                                        #Function call to generate the random string 
+
+# a =0,e = 5,i = 9,o = 15,u = 21           
+    
